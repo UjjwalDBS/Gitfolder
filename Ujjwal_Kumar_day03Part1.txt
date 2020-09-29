@@ -1,0 +1,28 @@
+1) Create a user called as hr_user with a password and grant SELECT, INSERT, UPDATE and DELETE privileges on all tables in emp_dept database
+
+--
+//you can put hostname instead of localhost
+
+$create user hr_user@localhost identified by 'password';
+
+$grant select on emp_dept.* to hr_user@localhost;
+$grant insert on emp_dept.* to hr_user@localhost;
+$grant update on emp_dept.* to hr_user@localhost;
+$grant delete on emp_dept.* to hr_user@localhost;
+
+
+
+
+
+2) Write a query add primary  key to orders table on order_id column
+
+---
+
+$ALTER TABLE orders ADD primary key(order_id);
+
+
+3) Write a query to update the statistics of emp table
+
+
+---
+$update statistics emp;

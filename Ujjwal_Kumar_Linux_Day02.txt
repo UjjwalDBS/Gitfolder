@@ -1,0 +1,13 @@
+Ujjwal Kumar Linux Assignment Day 02
+
+1.
+awk '{ l = index($0,"FEDORA");if (l) print l+1; i+=length();}'  [FileName]
+2.
+cat file1 |grep "x.*" | cat >> file1
+cat file1 |sed 's/unix/linux/' |cat >> file1
+3.
+sed -e '/.\{<length>\}/!d' <filename>
+4.
+echo "hello world" | awk { l=index($0,"r"); if(l) print l+1; }' 
+5.
+sudo apt-get install mysql -u root -h localhost password 'mypassword'

@@ -1,0 +1,7 @@
+1) Create a user called as hr_user with a password and grant SELECT, INSERT, UPDATE and DELETE privileges on all tables in emp_dept database
+2) Write a query add primary  key to orders table on order_id column
+3) Write a query to update the statistics of emp table
+
+
+
+awk '$1>500 {$2="localuser";print $1,$2}' p2
